@@ -1,4 +1,4 @@
-const rootUrl = 'https://github.com/DominikaZ/impossible-quiz/blob/main/data/'
+const rootUrl = 'https://dominikaz.github.io/impossible-quiz/data/'
 
 const density = await loadData('hustota.json')
 const companies = await loadData('firmy.json')
@@ -17,6 +17,7 @@ const travel = await loadData('cestovny_ruch.json')
 
 async function loadData(filename) {
     let path = rootUrl + filename;
+    console.log(path)
     const response = await fetch(path);
     const data = await response.json();
     return data;
