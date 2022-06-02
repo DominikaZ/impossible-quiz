@@ -1,0 +1,79 @@
+[
+ {
+  "Dosiahnuté vzdelanie": "Bez formálneho vzdelania",
+  "Trnavský kraj": 855,
+  "Nitriansky kraj": 833,
+  "Trenčiansky kraj": 491,
+  "Bratislavský kraj": 156,
+  "Žilinský kraj": 874,
+  "Banskobystrický kraj": 278,
+  "Košický kraj": 783,
+  "Prešovský kraj": 1815
+ },
+ {
+  "Dosiahnuté vzdelanie": "Základné vzdelanie",
+  "Trnavský kraj": 91776,
+  "Nitriansky kraj": 117227,
+  "Trenčiansky kraj": 76851,
+  "Bratislavský kraj": 57492,
+  "Žilinský kraj": 95760,
+  "Banskobystrický kraj": 108500,
+  "Košický kraj": 122508,
+  "Prešovský kraj": 138457
+ },
+ {
+  "Dosiahnuté vzdelanie": "Učňovské, stredné odborné (bez maturity)",
+  "Trnavský kraj": 147265,
+  "Nitriansky kraj": 177833,
+  "Trenčiansky kraj": 160095,
+  "Bratislavský kraj": 102977,
+  "Žilinský kraj": 170505,
+  "Banskobystrický kraj": 148475,
+  "Košický kraj": 159628,
+  "Prešovský kraj": 177386
+ },
+ {
+  "Dosiahnuté vzdelanie": "Úplné stredné s maturitou",
+  "Trnavský kraj": 152126,
+  "Nitriansky kraj": 189421,
+  "Trenčiansky kraj": 176829,
+  "Bratislavský kraj": 179307,
+  "Žilinský kraj": 193200,
+  "Banskobystrický kraj": 189853,
+  "Košický kraj": 220975,
+  "Prešovský kraj": 214457
+ },
+ {
+  "Dosiahnuté vzdelanie": "Vyššie vzdelanie",
+  "Trnavský kraj": 8358,
+  "Nitriansky kraj": 9740,
+  "Trenčiansky kraj": 8284,
+  "Bratislavský kraj": 13133,
+  "Žilinský kraj": 9586,
+  "Banskobystrický kraj": 10027,
+  "Košický kraj": 12078,
+  "Prešovský kraj": 9431
+ },
+ {
+  "Dosiahnuté vzdelanie": "Vysokoškolské 1. a 2. stupňa",
+  "Trnavský kraj": 61369,
+  "Nitriansky kraj": 78741,
+  "Trenčiansky kraj": 71938,
+  "Bratislavský kraj": 144199,
+  "Žilinský kraj": 84994,
+  "Banskobystrický kraj": 77602,
+  "Košický kraj": 97502,
+  "Prešovský kraj": 91177
+ },
+ {
+  "Dosiahnuté vzdelanie": "Vysokoškolské vzdelanie 3. stupňa (doktorandské)",
+  "Trnavský kraj": 2869,
+  "Nitriansky kraj": 4054,
+  "Trenčiansky kraj": 2249,
+  "Bratislavský kraj": 14397,
+  "Žilinský kraj": 3968,
+  "Banskobystrický kraj": 3703,
+  "Košický kraj": 5833,
+  "Prešovský kraj": 3580
+ }
+]

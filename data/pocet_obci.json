@@ -1,0 +1,314 @@
+[
+ {
+  "Miesto": "Okres Malacky",
+  "Pocet": 26
+ },
+ {
+  "Miesto": "Okres Pezinok",
+  "Pocet": 17
+ },
+ {
+  "Miesto": "Okres Senec",
+  "Pocet": 29
+ },
+ {
+  "Miesto": "Trnavský kraj",
+  "Pocet": 251
+ },
+ {
+  "Miesto": "Okres Dunajská Streda",
+  "Pocet": 67
+ },
+ {
+  "Miesto": "Okres Galanta",
+  "Pocet": 36
+ },
+ {
+  "Miesto": "Okres Hlohovec",
+  "Pocet": 24
+ },
+ {
+  "Miesto": "Okres Piešťany",
+  "Pocet": 27
+ },
+ {
+  "Miesto": "Okres Senica",
+  "Pocet": 31
+ },
+ {
+  "Miesto": "Okres Skalica",
+  "Pocet": 21
+ },
+ {
+  "Miesto": "Okres Trnava",
+  "Pocet": 45
+ },
+ {
+  "Miesto": "Trenčiansky kraj",
+  "Pocet": 276
+ },
+ {
+  "Miesto": "Okres Bánovce nad Bebravou",
+  "Pocet": 43
+ },
+ {
+  "Miesto": "Okres Ilava",
+  "Pocet": 21
+ },
+ {
+  "Miesto": "Okres Myjava",
+  "Pocet": 17
+ },
+ {
+  "Miesto": "Okres Nové Mesto nad Váhom",
+  "Pocet": 34
+ },
+ {
+  "Miesto": "Okres Partizánske",
+  "Pocet": 23
+ },
+ {
+  "Miesto": "Okres Považská Bystrica",
+  "Pocet": 28
+ },
+ {
+  "Miesto": "Okres Prievidza",
+  "Pocet": 52
+ },
+ {
+  "Miesto": "Okres Púchov",
+  "Pocet": 21
+ },
+ {
+  "Miesto": "Okres Trenčín",
+  "Pocet": 37
+ },
+ {
+  "Miesto": "Nitriansky kraj",
+  "Pocet": 354
+ },
+ {
+  "Miesto": "Okres Komárno",
+  "Pocet": 41
+ },
+ {
+  "Miesto": "Okres Levice",
+  "Pocet": 89
+ },
+ {
+  "Miesto": "Okres Nitra",
+  "Pocet": 62
+ },
+ {
+  "Miesto": "Okres Nové Zámky",
+  "Pocet": 62
+ },
+ {
+  "Miesto": "Okres Šaľa",
+  "Pocet": 13
+ },
+ {
+  "Miesto": "Okres Topoľčany",
+  "Pocet": 54
+ },
+ {
+  "Miesto": "Okres Zlaté Moravce",
+  "Pocet": 33
+ },
+ {
+  "Miesto": "Stredné Slovensko",
+  "Pocet": 831
+ },
+ {
+  "Miesto": "Žilinský kraj",
+  "Pocet": 315
+ },
+ {
+  "Miesto": "Okres Bytča",
+  "Pocet": 12
+ },
+ {
+  "Miesto": "Okres Čadca",
+  "Pocet": 23
+ },
+ {
+  "Miesto": "Okres Dolný Kubín",
+  "Pocet": 24
+ },
+ {
+  "Miesto": "Okres Kysucké Nové Mesto",
+  "Pocet": 14
+ },
+ {
+  "Miesto": "Okres Liptovský Mikuláš",
+  "Pocet": 56
+ },
+ {
+  "Miesto": "Okres Martin",
+  "Pocet": 43
+ },
+ {
+  "Miesto": "Okres Námestovo",
+  "Pocet": 24
+ },
+ {
+  "Miesto": "Okres Ružomberok",
+  "Pocet": 25
+ },
+ {
+  "Miesto": "Okres Turčianske Teplice",
+  "Pocet": 26
+ },
+ {
+  "Miesto": "Okres Tvrdošín",
+  "Pocet": 15
+ },
+ {
+  "Miesto": "Okres Žilina",
+  "Pocet": 53
+ },
+ {
+  "Miesto": "Banskobystrický kraj",
+  "Pocet": 516
+ },
+ {
+  "Miesto": "Okres Banská Bystrica",
+  "Pocet": 42
+ },
+ {
+  "Miesto": "Okres Banská Štiavnica",
+  "Pocet": 15
+ },
+ {
+  "Miesto": "Okres Brezno",
+  "Pocet": 30
+ },
+ {
+  "Miesto": "Okres Detva",
+  "Pocet": 15
+ },
+ {
+  "Miesto": "Okres Krupina",
+  "Pocet": 36
+ },
+ {
+  "Miesto": "Okres Lučenec",
+  "Pocet": 57
+ },
+ {
+  "Miesto": "Okres Poltár",
+  "Pocet": 22
+ },
+ {
+  "Miesto": "Okres Revúca",
+  "Pocet": 42
+ },
+ {
+  "Miesto": "Okres Rimavská Sobota",
+  "Pocet": 107
+ },
+ {
+  "Miesto": "Okres Veľký Krtíš",
+  "Pocet": 71
+ },
+ {
+  "Miesto": "Okres Zvolen",
+  "Pocet": 26
+ },
+ {
+  "Miesto": "Okres Žarnovica",
+  "Pocet": 18
+ },
+ {
+  "Miesto": "Okres Žiar nad Hronom",
+  "Pocet": 35
+ },
+ {
+  "Miesto": "Prešovský kraj",
+  "Pocet": 665
+ },
+ {
+  "Miesto": "Okres Bardejov",
+  "Pocet": 86
+ },
+ {
+  "Miesto": "Okres Humenné",
+  "Pocet": 62
+ },
+ {
+  "Miesto": "Okres Kežmarok",
+  "Pocet": 41
+ },
+ {
+  "Miesto": "Okres Levoča",
+  "Pocet": 33
+ },
+ {
+  "Miesto": "Okres Medzilaborce",
+  "Pocet": 23
+ },
+ {
+  "Miesto": "Okres Poprad",
+  "Pocet": 29
+ },
+ {
+  "Miesto": "Okres Prešov",
+  "Pocet": 91
+ },
+ {
+  "Miesto": "Okres Sabinov",
+  "Pocet": 43
+ },
+ {
+  "Miesto": "Okres Snina",
+  "Pocet": 34
+ },
+ {
+  "Miesto": "Okres Stará Ľubovňa",
+  "Pocet": 44
+ },
+ {
+  "Miesto": "Okres Stropkov",
+  "Pocet": 43
+ },
+ {
+  "Miesto": "Okres Svidník",
+  "Pocet": 68
+ },
+ {
+  "Miesto": "Okres Vranov nad Topľou",
+  "Pocet": 68
+ },
+ {
+  "Miesto": "Košický kraj",
+  "Pocet": 440
+ },
+ {
+  "Miesto": "Okres Gelnica",
+  "Pocet": 20
+ },
+ {
+  "Miesto": "Okres Košice - okolie",
+  "Pocet": 114
+ },
+ {
+  "Miesto": "Okres Michalovce",
+  "Pocet": 78
+ },
+ {
+  "Miesto": "Okres Rožňava",
+  "Pocet": 62
+ },
+ {
+  "Miesto": "Okres Sobrance",
+  "Pocet": 47
+ },
+ {
+  "Miesto": "Okres Spišská Nová Ves",
+  "Pocet": 36
+ },
+ {
+  "Miesto": "Okres Trebišov",
+  "Pocet": 82
+ }
+]
