@@ -1,19 +1,22 @@
-const density = await loadData('../data/hustota.json')
-const companies = await loadData('../data/firmy.json')
-const status = await loadData('../data/stav.json')
-const years_range = await loadData('../data/vek.json')
-const spending = await loadData('../data/spotreba.json')
-const crime = await loadData('../data/kriminalita.json')
-const education = await loadData('../data/vzdelanie.json')
-const groceries = await loadData('../data/potraviny.json')
-const places = await loadData('../data/pocet_obci.json')
-const income = await loadData('../data/pracovny_prijem.json')
-const socialTax = await loadData('../data/socialne_dane.json')
-const enviro = await loadData('../data/zivotne_prostredie.json')
-const research = await loadData('../data/vyskum.json')
-const travel = await loadData('../data/cestovny_ruch.json')
+const rootUrl = 'https://github.com/DominikaZ/impossible-quiz/blob/main/data/'
 
-async function loadData(path) {
+const density = await loadData('hustota.json')
+const companies = await loadData('firmy.json')
+const status = await loadData('stav.json')
+const years_range = await loadData('vek.json')
+const spending = await loadData('spotreba.json')
+const crime = await loadData('kriminalita.json')
+const education = await loadData('vzdelanie.json')
+const groceries = await loadData('potraviny.json')
+const places = await loadData('pocet_obci.json')
+const income = await loadData('pracovny_prijem.json')
+const socialTax = await loadData('socialne_dane.json')
+const enviro = await loadData('zivotne_prostredie.json')
+const research = await loadData('vyskum.json')
+const travel = await loadData('cestovny_ruch.json')
+
+async function loadData(filename) {
+    let path = rootUrl + filename;
     const response = await fetch(path);
     const data = await response.json();
     return data;
