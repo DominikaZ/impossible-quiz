@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/quiz.css">
     <script type="module" src="js/questions.js"></script>
-    <script defer type="module" src="js/script.js"></script>
+    <script defer type="module" src="js/slider.js"></script>
     <title>Kvíz</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
         </section>
     </header>
 
-    <main id="quiz-main">
+    <main>
 
         <section id="slider">
 
@@ -90,35 +90,10 @@
         </section>
 
         <div id="info-box">
-
             <p id="synopsis">Čaká Vás 20 otázok. Každá má na výber 4 možné odpovede, z ktorých je iba jedna správna. Veľa šťastia.</p>
-
-            <div id="progress-bar" class="hide">
-                <span id="bar"></span>
-            </div>
-            <div id="score" class="hide"></div>
         </div>
 
-        <button id="start-btn" class="btn">Štart</button>
-
-        <div id="box" class="hide">
-            <div id="question-box">
-                <div id="question">Question</div>
-                <div id="answer-btns" class="btn-grid">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
-                    <button class="btn">Answer 4</button>
-                </div>
-            </div>
-
-            <div class="move-btns">
-                <button id="next-btn" class="btn">Ďalej</button>
-                <button id="restart-btn" class="btn">Reštart</button>
-            </div>
-
-            </div>
-        </div>
+        <a id="start-btn" class="btn" href="quiz2.html">Štart</a>
 
     </main>
 

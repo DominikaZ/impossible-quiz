@@ -8,8 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 
-    min-width:500px;
-    min-height: 640px;
+    min-width: 50px;
 }
 
 main {

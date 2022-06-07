@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/favicon.ico"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz2.css">
+    <script type="module" src="js/questions.js"></script>
+    <script defer type="module" src="js/script.js"></script>
+    <title>Kvíz</title>
+</head>
+<body>
+    <header>
+        <section class="navigation">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a href="about.html">O projekte</a></li>
+                    <li><a class="bordered" href="quiz.html">Začať kvíz</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+
+        <div class="wrapper">
+
+            <div id="info-box">
+                <div id="progress-bar">
+                    <span id="bar"></span>
+                </div>
+                <div id="score"></div>
+            </div>
+    
+            <!-- hide till question loaded -->
+            <div id="box" class="hide"> 
+                <div id="question">Question</div>
+                <div id="answer-btns" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
+    
+            <div class="move-btns">
+                <button id="next-btn" class="btn cover">Ďalej</button>
+                <button id="restart-btn" class="btn hide">Reštart</button>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

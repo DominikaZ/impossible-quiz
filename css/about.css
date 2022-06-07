@@ -96,16 +96,14 @@ footer {
 
 @media screen and (max-width: 1820px) {
     .wrap {
-        padding: 2em 10em;
-    }
-}
-
-@media screen and (max-width: 1820px) {
-    .wrap {
         padding: 2em 8em;
     }
     .box {
         width: 18em;
+    }
+
+    h1 {
+        font-size: 5em;
     }
 }
 
@@ -118,4 +116,27 @@ footer {
     .box {
         text-align: center;
     }
+
+    h1 {
+        font-size: 4.5em;
+    }
 }
+
+
+@media screen and (max-width: 950px) {
+    h1 {
+        font-size: 3.8em;
+    }
+
+    .wrap {
+        padding: 10px 20px;
+    }
+}
+
+
+/* @media screen and (max-width: 970px) {
+    .wrap {
+        padding: 2em 5em;
+    }
+} */
+

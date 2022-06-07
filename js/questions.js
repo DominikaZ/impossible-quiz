@@ -180,7 +180,7 @@ function makeQuestionEnviro() {
 function makeQuestionResearch() {
     const [text, func] = makeMinMax('najmenej', 'najviac')
 
-    let question = 'Do ktorého odvetvia výskumu pre daný rok bolo zafinancovaných ' + text + ' peňažných prostriedkov'
+    let question = 'Do ktorého odvetvia výskumu pre daný rok bolo percentuálne zafinancovaných ' + text + ' peňažných prostriedkov'
     let years = ['2020', '2019', '2018', '2017', '2016', '2012', '2008', '2006', '2004', '2002']
     return createQuestionCategories(question, research, years, 'Odvetvie', func)
 }
