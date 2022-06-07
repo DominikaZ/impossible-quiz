@@ -17,7 +17,6 @@ const travel = await loadData('cestovny_ruch.json')
 
 async function loadData(filename) {
     let path = rootUrl + filename;
-    console.log(path)
     const response = await fetch(path);
     const data = await response.json();
     return data;
@@ -141,7 +140,7 @@ function makeQuestionStatus() {
 function makeQuestionSocialTax() {
     const [text, func] = makeMinMax('najnižšie', 'najvyššie')
  
-    let question = 'V ktorom kraji boli spomedzi všetkých odpovedí' + text + '...'
+    let question = 'V ktorom kraji boli spomedzi všetkých odpovedí ' + text + '...'
     let categories = ['Sociálne príjmy', 'Dane a odvody']
     return createQuestionCategories(question, socialTax, categories, 'Kraj', func)
 }

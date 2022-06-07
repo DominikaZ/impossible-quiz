@@ -2,7 +2,7 @@ body {
     width: 100vw;
     height: 100vh;
 
-    min-width:780px; 
+    min-height: 640px;
 }
 
 main {
@@ -22,19 +22,28 @@ main {
     display: none;
 }
 
+.go {
+    visibility: hidden;
+}
+
+.ungo {
+    visibility: visible;
+}
+
 #box {
     width: 50%;
     max-width: 90%;
     max-height: 80%;
     background-color: white;
     border-radius: 5px;
-    padding: 30px;
+    padding: 3em;
     box-shadow: 0 0 10px 2px;
+    margin-bottom: 2em;
 }
 
 #info-box {
-    margin-bottom: 5rem;
-    margin-top: 8rem;
+    margin-bottom: 4rem;
+    margin-top: 6rem;
     width: 40%;
 
     display: flex;
@@ -43,8 +52,69 @@ main {
     flex-wrap: wrap;
 }
 
+#info-box p {
+    text-align: center;
+    font-size: 24px;
+}
+
+.btn-slider {
+    background-color: #eeede28f;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0px 6px;
+}
+
+.btn-slider:hover {
+    background-color: #eeede2a1;
+    color: rgba(0, 0, 0, 0.747);
+}
+
+#prev-slide {
+    position: absolute;
+    top: 43%;
+    left: 1%;
+  }
+  
+#next-slide {
+    position: absolute;
+    top: 43%;
+    right: 1%;
+}
+
+#slider {
+    margin-top: 80px;
+    width: 100%;
+    max-width: 80%;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+}
+  
+.slide {
+    width: 50%;
+    max-width: 800px;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+
+    /* do not start with alone image */
+    transform: translateX(200%);
+}
+  
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 #score {
-    color: #004992;;
+    color: #004992;
     font-size: 4rem;
     font-weight: bold;
 }
@@ -121,6 +191,10 @@ main {
     color: rgb(255, 62, 62);
 }
 
+#start-btn {
+    margin-bottom: 30px;
+}
+
 #start-btn, #next-btn, #restart-btn {
     font-size: 2rem;
     font-weight: bold;
@@ -130,6 +204,10 @@ main {
 #start-btn, #restart-btn {
     padding: 20px 25px;
     letter-spacing: 1px;
+}
+
+#start-btn:hover, #restart-btn:hover {
+    transform: scale(1.05);
 }
 
 #restart-btn {
@@ -145,28 +223,105 @@ main {
 }
 
 
+/* SLIDER */
+@media screen and (max-width: 1180px) {
+    .slide {
+        width: 100%;
+    }
+
+    #slider {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .slide {
+        width: 100%;
+    }
+
+    #slider {
+        width: 80%;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    #slider {
+        display: none;
+    }
+}
+
+
+/* quiz */
+
 @media screen and (max-width: 1450px) {
     #box {
-        padding: 15px;
+        padding: 2em;
+        width: 60%;
     }
 
     #info-box {
-        margin-bottom: 4rem;
-        margin-top: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    #score {
+        font-size: 50px;
+        padding: 10px 0px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     #box {
-        padding: 10px;
+        padding: 1.5em;
+        width: 70%;
     }
 
     #question {
         text-align: center;
     }
+}
+
+@media screen and (max-width: 1320px) {
+    .row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .box {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .btn-grid {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+@media screen and (max-height: 800px) {
+    main {
+        height: 100%;
+    }
 
     #info-box {
         margin-bottom: 2rem;
-        margin-top: 4rem;
+        margin-top: 2rem;
+    }
+
+    main {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn {
+        font-size: 24px;
+    }
+
+    .move-btns {
+        font-size: 24px;
+    }
+
+    #score {
+        font-size: 40px;
     }
 }
+

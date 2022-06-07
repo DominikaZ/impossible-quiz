@@ -3,6 +3,11 @@ import { makeQuestionDensity, makeQuestionStatus, makeQuestionCompanies,
     makeQuestionGroceries, makeQuestionCountPlace, makeQuestionIncome, makeQuestionSocialTax, 
     makeQuestionEnviro, makeQuestionResearch, makeQuestionTravel } from './questions.js';
 
+const slider = document.getElementById('slider');
+const slides = document.querySelectorAll(".slide");
+const nextSlide = document.getElementById("next-slide");
+const prevSlide = document.getElementById("prev-slide");
+
 const startBtn = document.getElementById('start-btn')
 const restartBtn = document.getElementById('restart-btn')
 const nextBtn = document.getElementById('next-btn')
@@ -13,6 +18,7 @@ const questionElem = document.getElementById('question')
 const answerBtnsElem = document.getElementById('answer-btns')
 
 const scoreElem = document.getElementById('score')
+const progressBarElem = document.getElementById('progress-bar')
 const barElem = document.getElementById('bar')
 
 const MAX_QUESTIONS = 20
@@ -20,22 +26,92 @@ let alreadyAnswered = false
 let questions = []
 let currentQuestionIndex = 0
 
+setupSlider();
+addListeners()
 
-startBtn.addEventListener('click',  () => {
-    startBtn.classList.add('hide')
-    box.classList.remove('hide')
-    startGame()
-})
+// SLIDER //////////////////////////////////////////////////////
 
-restartBtn.addEventListener('click',  () => {
-    startGame()
-})
+function setupSlider() {
+    let intervalID;
+    let curSlide = 0;
+    let maxSlide = slides.length - 2; // last one not to be alone
 
-nextBtn.addEventListener('click', () => {
-    currentQuestionIndex++
-    setQuestion()
-})
+    slides.forEach((slide, indx) => {
+        slide.style.transform = `translateX(${indx * 100}%)`;
+    });
 
+    let setSliderInterval = function() {
+        intervalID = setInterval(function() {
+            slideToNext()
+        }, 3000);
+    }
+
+    let slideToNext = function() {
+        if (curSlide === maxSlide) {
+            curSlide = 0;
+        } else {
+            curSlide++;
+        }
+    
+        slides.forEach((slide, indx) => {
+            slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+        });
+    }
+
+    let slideToPrev = function() {
+        if (curSlide === 0) {
+            curSlide = maxSlide;
+        } else {
+            curSlide--;
+        }
+    
+        slides.forEach((slide, indx) => {
+            slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+        });
+    }
+
+    setSliderInterval();
+
+    nextSlide.addEventListener("click", () => {
+        slideToNext();
+        clearInterval(intervalID);
+        setSliderInterval();
+    })
+
+    prevSlide.addEventListener("click", () => {
+        slideToPrev();
+        clearInterval(intervalID);
+        setSliderInterval();
+    })
+}
+
+// LISTENERS ////////////////////////////////////////////////////
+
+function addListeners() {
+    startBtn.addEventListener('click',  () => {
+        startBtn.classList.add('hide')
+        slider.classList.add('hide')
+        synopsis.classList.add('hide')
+
+        box.classList.remove('hide')
+        scoreElem.classList.remove('hide')
+        progressBarElem.classList.remove('hide')
+
+        startGame()
+    })
+    
+    restartBtn.addEventListener('click',  () => {
+        startGame()
+    })
+    
+    nextBtn.addEventListener('click', () => {
+        currentQuestionIndex++
+        setQuestion()
+    })
+}
+
+
+// QUIZ LOGIC ////////////////////////////////////////////
 
 function startGame() {
     restartBtn.classList.add('hide')
@@ -91,7 +167,7 @@ function displayQuestion(question) {
     }
 
     barElem.style.width = `${((currentQuestionIndex + 1) / MAX_QUESTIONS) * 100}%`
-    barElem.innerText = currentQuestionIndex + 1 + '/' + MAX_QUESTIONS  
+    barElem.innerText = currentQuestionIndex + 1 + '/' + MAX_QUESTIONS
 }
 
 function selectAnswer(e) {
