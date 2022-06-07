@@ -3,6 +3,9 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+
+    min-width: 320px;
+    min-height: 500px;
 }
 
 main {
@@ -23,7 +26,7 @@ main {
     display: inline-block;
     padding: 20px 20px;
     color: #004992;
-    font-size: 1.25rem;
+    font-size: 1.25em;
     margin: 10px;
     border: solid;
     border-radius: 5px;
@@ -62,21 +65,21 @@ main {
     margin-top: 40px;
 }
 
-@media screen and (max-height: 770px) {
+/* @media screen and (max-height: 770px) {
     .welcome {
         margin: 2em;
         margin-bottom: 3em;
         padding: 1em;
     }
-}
+} */
 
-@media screen and (max-height: 720px) {
+@media screen and (max-height: 770px) {
     main {
         justify-content: center;
     }
 
     #welcome-text {
-        width: 50%;
+        width: 70%;
         border-radius: 5px;
         background-color: #b0c7deb0;
         padding: 25px;
@@ -88,20 +91,49 @@ main {
     }
 
     h1 {
-        font-size: 3.5em;
+        font-size: 3em;
+    }
+
+    #welcome-text p {
+        font-size: 26px;
     }
 }
 
 @media screen and (max-width: 800px) {
+    main {
+        justify-content: center;
+    }
+
     h1 {
-        font-size: 3.5em;
+        font-size: 3em;
+    }
+
+    #welcome-text p {
+        font-size: 26px;
     }
 
     .welcome {
         padding: 0em;
         margin: 2em;
+    }
+}
 
-        display: flex;
-        justify-content: center;
+
+@media screen and (max-width: 850px) and (max-height: 770px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .welcome a {
+        margin-top: 10px;
+    }
+
+    #welcome-text p {
+        font-size: 20px;
     }
 }

@@ -1,6 +1,7 @@
 # IMPOSSIBLE QUIZ
 
-Take a quiz about Slovak republic.
+Take a quiz about Slovak republic :).
+Quiz uses data from the project [DATAcube](http://datacube.statistics.sk/) of the Statistical Office of the Slovak Republic and generates random questions from them. 
 
 Categories:
 * Population density

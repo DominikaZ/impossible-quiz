@@ -7,8 +7,6 @@
     <link rel="shortcut icon" href="IMG/favicon.ico"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/quiz2.css">
-    <script type="module" src="js/questions.js"></script>
-    <script defer type="module" src="js/script.js"></script>
     <title>Kvíz</title>
 </head>
 <body>
@@ -36,7 +34,7 @@
             </div>
     
             <!-- hide till question loaded -->
-            <div id="box" class="hide"> 
+            <div class="hide" id="box"> 
                 <div id="question">Question</div>
                 <div id="answer-btns" class="btn-grid">
                     <button class="btn">Answer 1</button>
@@ -54,6 +52,8 @@
         </div>
 
     </main>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
