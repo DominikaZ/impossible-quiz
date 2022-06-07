@@ -1,7 +1,3 @@
-body {
-    overflow-x: hidden;
-}
-
 a {
     color: #004992;
     font-weight: bold;
@@ -12,10 +8,11 @@ a:hover {
 }
 
 .wrap {
-    padding: 5em 20em;
+    padding: 5em 15em;
 }
 
 h1 {
+    font-size: 4rem;
     margin-top: 1em;
     text-align: center;
 }
@@ -25,22 +22,25 @@ h3 {
 }
 
 .content {
-    font-size: 28px;
-	line-height: 36px;
-	margin: 20px 20px 20px;
+    font-size: 1.3rem;
+	line-height: 2.3rem;
 
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.box {
-    float: left;
-    padding: 1em;
+.row {
+    width: 90%;
+    margin-bottom: 3em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-  
-.left .right {
-    width: 50%;
+
+.box {
+    width: 24em;
 }
 
 .box h3 p {
@@ -54,14 +54,6 @@ h3 {
 
 .part p {
     margin: 1em 1em 1em 0em;
-}
-
-.box {
-    display: inline-block;
-    text-align: left;
-    width: 20em;
-    padding: 1em;
-    margin: 5px 5px;
 }
 
 .box h3 {
@@ -112,13 +104,19 @@ footer {
         display: flex;
         align-items: center;
         flex-direction: column;
+
+        width: 100%;
+        margin-bottom: 0em;
     }
+
     .box {
         text-align: center;
+        margin-bottom: 3.3em;
+        width: 24em;
     }
 
     h1 {
-        font-size: 4.5em;
+        font-size: 3.7em;
     }
 }
 
@@ -129,18 +127,14 @@ footer {
     }
 
     .content p {
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     .wrap {
-        padding: 10px 20px;
+        padding: 1rem 1rem;
+    }
+
+    .box {
+        width: 18em;
     }
 }
-
-
-/* @media screen and (max-width: 970px) {
-    .wrap {
-        padding: 2em 5em;
-    }
-} */
-
